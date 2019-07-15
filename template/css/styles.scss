@@ -1,0 +1,96 @@
+$black-color: #2A2C2B;
+$white-color: white;
+$primary-color: #8BC34A;
+$secundary-color: #1B76FF;
+
+html body {
+    background-color: $white-color;
+    color: $black-color;
+    font-family: 'Montserrat', sans-serif;
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .topbar {
+        color:  $white-color;
+        background-color: $primary-color;
+        border-bottom: 15px solid $white-color;
+        font-size: 32px;
+        font-weight: 300;
+        height: 72px;
+
+        .row {
+            margin-bottom: 0px;
+
+            .logo-link {
+                display: inline-block;
+                padding: 3px 0px;
+                .brand-logo {
+                    height: 48px;
+                }
+            }
+
+            .external-links {
+                padding: 0px;
+                margin: 5px 0px;
+                display: flex;
+                li {
+                    float: left;
+                    margin-right: 5px;
+                    height: 40px;
+                    a {
+                        color:  $white-color;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        background-color: rgba($black-color, .5);
+        color: #fff;
+        position: absolute;
+        z-index: 9;
+    }
+
+    .banner {
+        width: 100%;
+        position: relative;
+        background-image: url(../images/imagen-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 40px;
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color:  rgba($secundary-color, .63);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+        &--content {
+            color: $white-color;
+            font-weight: 500;
+            font-size: 35px;
+            height: 900px;
+            padding-top: 64px;
+            position: relative;
+            z-index: 5;
+            p {
+                margin: 10px 0px;
+            }
+        }
+    }
+}
