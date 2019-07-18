@@ -14,3 +14,11 @@ https://materializecss.com/getting-started.html
 ## Icons - LINE AWESOME
 
 https://iconos8.es/line-awesome
+
+## Template tomada de
+
+https://colorlib.com/wp/template/divisima/
+
+### Alternativa:
+
+https://colorlib.com/wp/template/onetech/
